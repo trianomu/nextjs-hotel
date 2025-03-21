@@ -23,8 +23,6 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ slug
         { status: response.status }
       );
     }
-
-    console.log(response);
     // Parse and return the API response
     const data = await response.json();
     return NextResponse.json({ success: true, data: data.data });
