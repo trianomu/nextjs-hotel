@@ -243,23 +243,28 @@ export default function SearchPage() {
                 value={searchData.adults}
                 min={1} 
                 onValueChange={(e: InputNumberValueChangeEvent) => setSearchData({ ...searchData, adults: e.value || 1 })} 
-                showButtons buttonLayout="vertical" style={{ width: '3rem' }}
+                showButtons buttonLayout="horizontal"
                 decrementButtonClassName="p-button-secondary" 
                 incrementButtonClassName="p-button-secondary" 
                 incrementButtonIcon="pi pi-plus" 
                 decrementButtonIcon="pi pi-minus" 
+                inputStyle={{ width: "3rem", textAlign: "center" }}
               />
+              <span className="mr-3">
                Tamu
+
+              </span>
                
                <InputNumber
                 value={searchData.child}
                 min={1} 
                 onValueChange={(e: InputNumberValueChangeEvent) => setSearchData({ ...searchData, child: e.value || 0 })} 
-                showButtons buttonLayout="vertical" style={{ width: '3rem' }}
+                showButtons buttonLayout="horizontal"
                 decrementButtonClassName="p-button-secondary" 
                 incrementButtonClassName="p-button-secondary" 
                 incrementButtonIcon="pi pi-plus" 
                 decrementButtonIcon="pi pi-minus" 
+                inputStyle={{ width: "3rem", textAlign: "center" }}
               /> Anak
               </p>
         </div>
