@@ -338,7 +338,7 @@ export default function SearchPage() {
             {/* Pricing & Booking */}
             <div className="room-list-container mt-8">
               {hotel?.rooms?.map((room, index) => (
-                <div key={index} className="room-section flex align-center">
+                <div key={index} className="room-section flex align-center my-4">
                   <div className="room-info gap-4 mr-3 flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200">
                     <div className="image-container w-60 h-60 m- ">
                       <ImageCarousel images={room.images} />
